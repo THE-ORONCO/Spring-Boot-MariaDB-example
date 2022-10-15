@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  mariadb:
+    image: mariadb:latest
+    environment:
+      - MYSQL_USER=usr
+      - MYSQL_PASSWORD=pw
+      - MYSQL_ROOT_PASSWORD=pw
+      - MYSQL_DATABASE=bruh
+    ports:
+      - "3306:3306"
